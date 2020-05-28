@@ -3,7 +3,7 @@ channels:
   - defaults
 dependencies:
   - python=3.6
-  - pyspark==2.2.1
+  - pyspark==2.3.2
   - requests
   - click
   - pip:
