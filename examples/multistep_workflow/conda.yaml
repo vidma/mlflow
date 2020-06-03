@@ -2,7 +2,9 @@ name: multistep
 channels:
   - defaults
   - conda-forge
+  - bioconda
 dependencies:
+  - java-jdk==8.0.112
   - python=3.6
   - pyspark==2.2.1
   - requests
