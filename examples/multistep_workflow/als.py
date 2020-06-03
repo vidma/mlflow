@@ -25,8 +25,8 @@ def train_als(ratings_data, split_prop, max_iter, reg_param, rank, cold_start_st
     seed = 42
 
     spark = pyspark.sql.SparkSession.builder.master('local[1]') \
-    .config("spark.driver.memory", "512mb") \
-    .config("spark.executor.memory",'512mb') \
+    .config("spark.driver.memory", "512m") \
+    .config("spark.executor.memory",'512m') \
     .getOrCreate()
 
     ratings_df = spark.read.parquet(ratings_data)
